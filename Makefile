@@ -1,4 +1,7 @@
 all : dilawar.pdf
 
 %.pdf : %.tex
-	latexmk -pdf -lualatex  $<
+	podman run \
+		-v $(PWD):/workdir \
+		-it docker.io/dilawars/writing \
+		latexmk -pdf -lualatex  $<
