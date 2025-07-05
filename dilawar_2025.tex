@@ -1,51 +1,18 @@
-\documentclass[11pt,a4paper, colorlinks=true, linkcolor=cyan]{moderncv}
-
-% moderncv themes
-\moderncvtheme[blue]{classic} 
-% adjust the page margins
-\usepackage[scale=0.8]{geometry}
+\documentclass[10pt,a4paper, colorlinks=true, linkcolor=blue]{moderncv}
+\moderncvtheme{banking}
+\usepackage{fontspec}
+\usepackage[margin=1cm]{geometry}
 \recomputelengths                             % required when changes are made to page layout lengths
 
-\fancyfoot{} % clear all footer fields
-\fancyfoot[LE,RO]{\thepage}    
-\fancyfoot[RE,LO]{\footnotesize}
-
-% bibliography
-\usepackage[sorting=ydnt]{biblatex}
-\renewbibmacro*{date}{}
-% \renewbibmacro*{date+extrayear}{}
-\renewbibmacro*{issue+date}{}
-\newcommand*{\bibyear}{}
-
-% This hack is from here: https://tex.stackexchange.com/a/123818/8087
-% reformat bib style.
-\defbibenvironment{bibliography}
-  {\list
-     {\iffieldequals{year}{\bibyear}
-        {}
-        {\printfield{year}%
-         \savefield{year}{\bibyear}}}
-     {\setlength{\topsep}{0pt}% layout parameters based on moderncvstyleclassic.sty
-      \setlength{\labelwidth}{\hintscolumnwidth}%
-      \setlength{\labelsep}{\separatorcolumnwidth}%
-      \setlength{\itemsep}{\bibitemsep}%
-      \leftmargin\labelwidth%
-      \advance\leftmargin\labelsep}%
-      \sloppy\clubpenalty4000\widowpenalty4000}
-  {\endlist}
-  {\item}
-
-\addbibresource{pub.bib}
-
 % personal data
-\firstname{Dilawar}
-\familyname{Singh}
-\title{Curriculum Vitae}        
-\address{BhallaLab, NCBS Bangalore\\ GKVK Campus, Bellary Road\\Bangalore}{560065} 
-\mobile{+91 080 2366 6504}     
-\email{dilawars@ncbs.res.in}   
-\extrainfo{\httplink[ORCID:0000-0002-4645-3211]{https://orcid.org/0000-0002-4645-3211}}
-\photo[84pt]{pic_enhanced.jpg}   
+\name{Dilawar}{Singh}
+% \address{Vidyaranyapura, Bangalore}{560065}
+\phone{+91 910 875 0527}
+\email{dilawar.s.rajput@gmail.com}
+\homepage{https://dilawars.me}
+\social[github]{https://github.com/dilawar}
+\social[orcid]{https://orcid.org/0000-0002-4645-3211}
+% \photo[84pt]{dilawar_headshot_2025.png}
 
 %----------------------------------------------------------------------------------
 %            content
@@ -53,111 +20,136 @@
 \begin{document}
 \maketitle
 
-\vspace{0mm}
-
-%Section
-\section{Info}
-\cvdoubleitem{Born}{June 5th, 1985 at Nichalpur (India)}{}{}
-\cvitem{Home}{Nichalpur, Bugwara, Bijnor, U.P. - 246745}
-\cvdoubleitem{Github}{\small\url{https://github.com/dilawar}\normalsize}{Skype}{\small dilawar\_s}
-
-\vspace{0mm}
-
-%Section
-
-\section{Academic Backgroud} 
-\cventry{2014-2019}{Ph. D.}{NCBS Bangalore}{}{}{
-    Computational Neuroscience, 
-    Thesis Advisor: \href{https://ncbs.res.in/bhalla}{Prof. Upinder Singh Bhalla}
+%
+% Work experience.
+%
+\vspace{-1cm}
+\section{Experience}
+\cventry{2025 Jan-current}{Senior Engineer, Dognosis}{}{}{}{
+    \cvlistitem{%
+        Solo developer for a scalable EHR portal (PHP8/Codeigniter) for collecting
+        patient data and real time behavioral experiments with cancer sniffing
+        dogs. Components includes real-time event processing using distributed
+        queues (ntfy, Rust/Axum), data-APIs (FastAPI, Rust/Axum), ETL pipelines
+        (Python) and data-storage (PostGreSQL, Victorialmetrics).
+    }
+    \cvlistitem{%
+        Set up DevOps infrastructure (GitLab, CICD, Sentry) and observability
+        stack (OpenTelemetry, Grafana), and backup services.
+    }
 }
 
-\cventry{2010-2013}{Ph. D.}{IIT Bombay}{}{\textbf{withdrawn}}
-{\emph{Partition of large scale digital systems}, Thesis advisor: Prof. Sachin
-Patkar \texttt{<patkar@ee.iitb.ac.in>}
+\cventry{2019-2024}{CoFounder \& CTO, Subconscious Compute}{}{}{}{
+    \cvlistitem{%
+        Subsconsious compute is a pre series-A cybersecurity startup. I co-founded
+        it after my PhD. I designed and lead the developed of its flagship
+        endpoint security product Shepherd. 
+    }
+    \cvlistitem{%
+        I hired and managed a technical team of 15 engineers for development of
+        cross platform endpoint-security solution including agent,
+        data-collection APIs and databases, and user portals.
+    }
+    \cvlistitem{%
+        As IC, I wrote kernel minifilter (C++, Win32) and contributed to endpoint observability agent 
+        (Rust, C++, Java) for cross-platform (Linux, Windows, OSX, Android) deployment.
+    }
+}
+\cventry{2013-2014}{Research Fellow, NCBS Bangalore}{}{}{}{
+    \cvlistitem{%
+        Added SBML support to \href{https://github.com/BhallaLab/moose}{MOOSE
+        Simulator} for reusing the existing models, and modernized build system
+        using CMake for cross-platform build.
+    }
+    \cvlistitem{%
+        I helped porting HSolver to GPU using CUDA to speed up numerical
+        computation.
+    }
 }
 
-\cventry{2007-2009}{M. Tech.}{IIT Bombay}{Microelectronics and VLSI}{}
-{\emph{Fabrication of micro-electrode arrays for retinal prosthesis}
-, Thesis advisor: Prof. Dinesh K. Sharma. \texttt{<dinesh@ee.iitb.ac.in>}}
-
-\cventry{2003-2007}{B. Tech.}{Dr. MGR ERI, Chennai}{}{}
-  {Intrumentation and Control Engineering }
-
-
-% work.
-\section{Work Experience}
-\cventry{2013-2014}{Research Fellow}{NCBS Bangalore}
-{}{}{
-    \href{https://github.com/BhallaLab/moose}{MOOSE Simulator}, PI: Prof. Upinder Bhalla
-}
-\cventry{2009-2010}{Design Engineer}{Kritical Solutions Noida}
-{}{}{Embedded systems/Firmware development
-Development of firmware for movie-cameras on DINI board with RTOS Multi. Image
-stabilization using Kalman filtering. Maintenance of version control system and
-servers hosted on Solaris OS.}
-
-\cventry{2016-2018}{GSoC Mentor}{INCF}
-{}{}{For 2016, 17, and 18, I was a mentor in Google Summer of Code (GSoC)
-    program. I mentored for the organization \href{https://incf.org}{INCF} for
-    \href{https://moose.ncbs.res.in}{MOOSE Neural Simulator}. These projects
-    involved CUDA/GPU and optimization of solvers.
+\cventry{2016-2018}{GSoC Mentor, INCF}{}{}{}{
+    \cvlistitem{
+        For 2016, 17, and 18, I was a mentor in Google Summer of Code (GSoC)
+        program. I mentored for the organization \href{https://incf.org}{INCF} for
+        \href{https://moose.ncbs.res.in}{MOOSE Neural Simulator}. These projects
+        involved CUDA/GPU and optimization of solvers.
+    }
 }
 
-\section{Research Area}
-\cventry{Biological Systems}{Robustness, Neural Computation, Memory}
+\cventry{2009-2010}{Design Engineer, Kritical Solutions Noida}{}{}{}{
+    \cvlistitem{
+        I was part of team for firmware development for movie-cameras on DINI board with RTOS Multi. 
+        I added image stabilization using Kalman filtering. 
+    }
+    \cvlistitem{
+        I implemented version control practices and sedtup backup solutions for whole
+        organization.
+    }
+}
+
+%
+% Projects
+%
+\section{Other Projects}
+\cventry{\href{https://ncbs.res.in/hippo}{NCBS Hippo}}{Content management system and a community app}
 {}{}{}
 {
-    During my Ph.D., I studied mechanisms which can store information for the lifetime
-    of animal. I am very interested in biological systems, especially their
-    robustness and probably approximately correct computation and how these
-    computations can be replicated in artificial systems.
-    Currently I am looking at attention (winner takes all) and habituation (ignoring non-changing
-    component of environment) in biological systems and neural mechanisms which
-    gives rise to them.
+    \cvlistitem{
+        \url{https://github.com/dilawar/hippo} in a PHP7/Codeigniter3 app written to
+        automatically schedules students' annual progress seminars using network flow methods 
+        (Python+networkx). It is also used to manages room booking and managing talks on the campus.
+    }
+    \cvlistitem{
+        I also wrote an accompanying Android App using
+        \texttt{cordova+Vue+Framework7}
+        (\href{https://play.google.com/store/apps/details?id=com.dilawar.hippo}{Google
+        Play}).
+    }
 }
 
-\section{Projects}
-\cventry{NCBS Hippo}{Content management system and community app}
-{}{}{}
+\cventry{Animal Behaviour Box}{\href{https://github.com/BhallaLab/AnimalBehaviour}{Behaviour Box}}{}{}{}
 {
-    \href{NCBS Hippo}{https://ncbs.res.in/hippo} is a RESTful
-    website written in PHP7+Codeigniter. It automatically schedules students'
-    annual progress seminars using network flow methods (Python+networkx). It also
-    manages venue booking, and various talks happening on the campus. 
-    Repository: \url{https://github.com/dilawar/Hippo}.
-    I also wrote an accompanying social Android App using
-    \texttt{cordova+Vue+Framework7}. It is available at
-    \href{https://play.google.com/store/apps/details?id=com.dilawar.hippo}{Google Play}.
+    \cvlistitem{
+        This embedded system was built to run multiple batches of
+        behaviour protocol automatically, to increase accuracy of stimuli triggers, 
+        syncing, storing, and processing of multi-modal data. I used
+        C++/Python, Arduino Uno, Point Grey's high speed cameras.
+    }
 }
-\cventry{MOOSE simulator}{Multiscale Object Oriented Simulation Engine}
-{}{}{}
-{
-    During my Ph.D. at NCBS Bangalore, I worked on MOOSE simulator. Specially I
-    created CMake based build, CI integration, packaging for PyPI and various
-    linux distribution. I also integrated BOOST based ODE solvers to improve the
-    efficiency of solvers. I also handle various maintenance related tasks. 
-    Repository: \url{https://github.com/BhallaLab/moose-core}
-}
-\cventry{Arduino/PI based behavioural setup}{Animal Behaviour Box}
-{}{}{}
-{
-    An automated behavioural pipeline using Arduino Uno, Point Grey's high speed
-    cameras etc.  
-    Repository: \url{https://github.com/BhallaLab/AnimalBehaviour}.
-}
+
 \cventry{Other projects}{}
 {}{}{}
 {
-    My other public projects can be found on \url{https://github.com/dilawar/}.
-    Among these, \texttt{CodeSniffer} which checks plagiarism in student's coding
-    assignments; a parser of WAV file; eye blink detection (opencv); a tool to
-    extract data from old figures are more popular on github.
+    \cvlistitem{
+        Various \href{https://crates.io/users/dilawar}{rust crates} e.g. safe
+        rust bindings to Apple's endpoint security API, stream processing in
+        Rust, WMI interface etc.
+    }
+    \cvlistitem{
+        Various \href{https://pypi.org/user/dilawar}{python packages} e.g. a
+        utility to extract data from images of plots, Notion/Gitlab bridge,
+        a UI for oscilloscope etc.
+    }
+    \cvlistitem{
+        A poor man's plagiarism detector --
+        \href{https://github.com/dilawar/sniffer}{CodeSniffer} -- for coding assignments when I was a TA.
+    }
+    \cvlistitem{ 
+        \href{https://pypi.org/project/smoldyn}{Python binding} and wheels for
+        \href{https://smoldyn.org}{Smoldyn simulator} and for
+        \href{https://pypi.org/project/pymoose/}{MOOSE simulator} using
+        PyBind11.
+    }
+    \cvlistitem{
+        Fabrication of micro-electrode arrays for retinal prosthesis. Thesis advisor:
+        \href{mailto:dinesh@ee.iitb.ac.in}{Dinesh K. Sharma}.
+    }
 }
 
-
-
+%
+% Skills
+%
 \section{Skills}
-
 \cvline{Languages}{\small C/C++, Python, Haskell, Javascript, VHDL/Verilog/Bluespec, SQL, PHP, Lua, \LaTeX}
 \cvline{CAD Tools}{KiCAD, Cadence, Xilinx and Altera tools, Ngspice}
 \cvline{Frameworks}{HTML+Vue.js, PHP+Codeigniter, Python+Scipy/Pandas/Matplotlib, pandoc ec. }
@@ -168,7 +160,15 @@ servers hosted on Solaris OS.}
         \href{https://pypi.org/user/dilawar/}{PyPI}
 }
 
-\nocite{*}
-\printbibliography[title={Publications}]
+
+
+%
+% EDUCATION
+%
+\section{Education}
+\cventry{2014-2019}{\textbf{PhD}, NCBS Bangalore, India}{}{}{}{}
+\cventry{2010-2013}{PhD, Digial Systems, IIT Bombay}{}{}{\textbf{withdrawn}}{}
+\cventry{2007-2009}{MTech, VLSI, IIT Bombay}{}{}{}{}
+\cventry{2003-2007}{BTech, Electrical Engineering, Dr. MGR ERI, Chennai}{}{}{}{}
 
 \end{document}
