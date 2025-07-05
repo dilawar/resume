@@ -13,6 +13,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-    
     - uses: wtfjoke/setup-tectonic@v3
     - run: make -B
+    - name: Upload resume
+      uses: actions/upload-artifacts@v3
+      with:
+        name: main
+        path: dilawar.pdf
