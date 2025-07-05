@@ -1,4 +1,5 @@
-all : dilawar.pdf
+all : dilawar_2025.pdf
 
 %.pdf : %.tex
-	latexmk -pdf -lualatex  $<
+	# latexmk -pdf -lualatex  $<
+	tectonic $<
