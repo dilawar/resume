@@ -16,7 +16,7 @@ jobs:
     - uses: wtfjoke/setup-tectonic@v3
     - run: make -B
     - name: Upload resume
-      uses: actions/upload-artifacts@v3
+      uses: actions/upload-artifact@v3
       with:
         name: main
         path: dilawar.pdf
