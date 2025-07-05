@@ -1,6 +1,4 @@
-Go to https://rxresu.me/dilawar/dilawar-singh
-
-resume
+Resume
 ======
 
-My resume
+Dilawar Singh Resume.
