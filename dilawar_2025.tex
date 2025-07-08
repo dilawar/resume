@@ -1,60 +1,92 @@
-\documentclass[10pt, a4paper, colorlinks=true, linkcolor=blue]{moderncv}
+\documentclass[11pt, a4paper, colorlinks=true, linkcolor=blue]{moderncv}
+% \hypersetup{urlcolor=blue}
 \moderncvtheme{banking}
-\usepackage{fontspec}
-\usepackage[margin=1cm]{geometry}
-\recomputelengths                             % required when changes are made to page layout lengths
+\usepackage[sfdefault, light]{FiraSans}
+\usepackage[top=0.6cm, bottom=1.5cm, right=1cm, left=1cm]{geometry}
+\recomputelengths 
 
 % personal data
 \name{Dilawar}{Singh}
-% \address{Vidyaranyapura, Bangalore}{560065}
-\phone{+91 910 875 0527}
+% \phone{+91 910 875 0527}
 \email{dilawar.s.rajput@gmail.com}
 \homepage{dilawars.me}
 \social[github]{dilawar}
-\social[orcid]{0000-0002-4645-3211}
-% \photo[84pt]{dilawar_headshot_2025.png}
+\renewcommand\labelitemi{\textbullet}
 
 %----------------------------------------------------------------------------------
 %            content
 %----------------------------------------------------------------------------------
 \begin{document}
+\hypersetup{urlcolor=blue}
 \maketitle
 
 \vspace{-8mm} 
-I have significant experience as a tech lead and CTO. I can easily
-integrate into teams, build teams, and mentor juniors. Very skilled at prototyping,
-developing, and modeling. Experienced system engineer and fullstack developer
-who enjoys dealing with ambiguity at the interface of design and
-implementation.
+
+System Engineer and Fullstack developer. I have significant experience as a tech lead 
+and CTO. I can easily integrate into teams, build teams, and mentor juniors.
+Slightly workaholic. FOSS Contributor.
+
+%
+% Skills
+%
+\section{Skills}
+\cvline{Languages}{
+    Rust, C++, Python, PHP, Javascript/Typescript, SQL, \LaTeX. 
+    \emph{(familiar)} Haskell, VHDL/Verilog/SystemC.
+}
+\cvline{Databases}{
+    PostGreSQL, MariaDB, Sqlite3, DuckDB, VictorialMetrics. \emph{(tools)}
+    Phinx, Alembic, SQLModel.
+}
+\cvline{Libraries \& Frameworks} {
+    Boost, PyBind11, Win32 API, GDAL, OpenCV, numpy/scipy stack, leptos.
+}
+\cvline{Web}{
+    Vue3, React, HTMX; Codeigniter, Laravel, Axum, Actix, FastAPI;
+}
+\cvline{Modeling and Simulation}{
+    PlantUML, TikZ; KiCAD, OpenSCAD; ModelSim, NgSpice; MOOSE, Neuron; Smoldyn.
+}
+\cvline{DevOps}{
+    Git, Docker, CMake, PyInfra/ansible, bash/lua; Jenkins, Gitlab Runners;
+    Grafana; eBPF based sensors; 
+    Packaging (nsis, deb, rpm), 
+    \href{https://build.opensuse.org/users/dilawar}{Open Build Service};
+}
+\cvline{Misc}{
+    Parser, Network Flows, Graphs, Linear Algebra \& Combinatorics,
+    Computer Vision, Probabilistic DSA, BDD/Model Checking, DSP, Routing.
+}
+
 
 %
 % Work experience.
 %
 \vspace{-3mm}
 \section{Experience}
-\cventry{2025 Jan-current}{\textbf{Senior Engineer}, Dognosis, Bengaluru}{}{}{}{
+\cventry{Jan 2025 -- current}{\textbf{Senior Engineer}, Dognosis, Bengaluru}{}{}{}{
     \cvlistitem{%
-        Currently writing a scalable EHR portal for medical record management,
-        and an app to automate experiments with cancer-sniffing dogs. 
-        Major components includes real-time event processing using distributed
-        queues, data APIs, ETL pipelines, and data-storage. Tech used: \emph{Rust,
-        Python, PHP8, PostGreSQL, NTFY, VictorialMetrics DB}.
+        To improve cancer-detection rate, I am resposible for coming up with
+        practical computational and experimental strategies. 
     }
     \cvlistitem{%
-        I set up DevOps infrastructure (GitLab, cicd, Sentry) and observability
-        stack (OpenTelemetry, Grafana), and backup services. Implemented
-        DevSecOps. I also conduct technical interviews.
+        To collect patient data from remote locations, building APIs and
+        portals. Also helping hardware team to build an experimental area where
+        tainers involvement is mininal to increase the throughput. 
+    }
+    \cvlistitem{%
+        I am helping in building their technical team (technical interviews), and
+        infrastructure and devops.
     }
 }
 
-\cventry{2019-2024}{\textbf{CoFounder \& CTO}, Subconscious Compute, Bengaluru}{}{}{}{
+\cventry{Dec 2019 -- Dec 2024}{\textbf{CoFounder \& CTO}, Subconscious Compute, Bengaluru}{}{}{}{
     \cvlistitem{%
-        Subsconsious compute is a pre series-A endpoint cybersecurity startup. I cofounded
-        it after my PhD and lead the developed of its flagship endpoint security 
-        product Shepherd. 
-        I hired and managed a team of 15 engineers for writing a cross platform
+        Cofounded a endpoint cybersecurity startup  and took it to pre-series A.
+        I led the development of its flagship endpoint security product Shepherd.
+        I hired and managed a team of 15 system engineers for writing a cross platform
         endpoint-security solution that includes an agent, data-collection APIs,
-        databases, and single pane of glass.
+        databases.
     }
     \cvlistitem{%
         As IC, I wrote kernel minifilter (C++, Win32) and contributed to endpoint 
@@ -62,28 +94,18 @@ implementation.
         Android) deployment.
     }
 }
-\cventry{2016-2018}{\textbf{Research Fellow \& GSoC Mentor}}{}{}{}{
+\cventry{2016 -- 2018}{\textbf{Research Fellow \& GSoC Mentor}}{}{}{}{
     \cvlistitem{
-        I was a mentor in Google Summer of Code (GSoC) 2016, 2017, and 2018. I mentored 
-        for the organization \href{https://incf.org}{INCF} for
-        \href{https://moose.ncbs.res.in}{MOOSE}.
-    }
-    \cvlistitem{%
-        Added SBML support to \href{https://github.com/BhallaLab/moose}{MOOSE
-        Simulator} for reusing the existing models, and modernized build system
-        using CMake for cross-platform build. I also helped porting HSolver to GPU 
-        using CUDA to speed up numerical computation.
+        To improve the speed of numerical solvers in the simulator
+        \href{https://moose.ncbs.res.in}{MOOSE}, I mentored GPU/CUDA effort in
+        GSoC. Added SMBL support and modernize build system.
     }
 }
 
-\cventry{2009-2010}{\textbf{Firmware Engineer}, Kritical Solutions, Noida}{}{}{}{
+\cventry{Jul 2009 -- Jun 2010}{\textbf{Firmware Engineer}, Kritical Solutions, Noida}{}{}{}{
     \cvlistitem{
-        I was part of team for firmware development for movie-cameras on DINI board with RTOS Multi. 
-        I wrote image stabilization using Kalman filtering. 
-    }
-    \cvlistitem{
-        I implemented version control practices and sedtup backup solutions for whole
-        organization.
+        To remove vibration artifacts from recorded videos, I implemented Kalman filter
+        based image stabilizer.
     }
 }
 
@@ -92,83 +114,44 @@ implementation.
 %
 \section{Selected Projects}
 \cvlistitem{
-    \href{https://ncbs.res.in/hippo}{NCBS Hippo} was written to
-    optimally schedules students' annual seminars while taking preference of
-    dates. It also managed room booking, and talks on the campus.
-    I also wrote an accompanying Android App using \texttt{cordova+Vue+Framework7}
+    To reduce email chaos and trips to the academic office, I wrote 
+    \href{https://ncbs.res.in/hippo}{NCBS Hippo} to automatically
+    \& "optimally" schedule annual seminars. It also managed room booking,
+    institute public calendar. I also wrote accompanying Android App 
     (\href{https://play.google.com/store/apps/details?id=com.dilawar.hippo}{Google
-    Play}). It has a few thousand user.
+    Play}).
 }
 \cvlistitem{
-    \href{https://github.com/BhallaLab/AnimalBehaviour}{Behaviour Box} was 
-    built to run multiple batches of
-    behaviour protocol automatically, to increase accuracy of stimuli
-    triggers, control cameras, syncing, storing, and processing of sensor
-    and video streams. I used C++/Python, Arduino Uno, BlackFly cameras.
+    Imagine training mice manually? I built 
+    a \href{https://github.com/BhallaLab/AnimalBehaviour}{Behaviour Box} that
+    automated protocols. Suddenly, multiple sessions were possible in a day!
 }
 \cvlistitem{
-    A \href{https://tools.maxflow.in}{collection of free web tools}.
+    I wrote and maintain a few \href{https://crates.io/users/dilawar}{rust
+    crates}: stream processing, WMI interface, cli tools etc.
 }
 \cvlistitem{
-    Various \href{https://crates.io/users/dilawar}{rust crates} e.g. safe
-    rust bindings to Apple's endpoint security API, stream processing in
-    Rust, WMI interface etc.
-}
-\cvlistitem{
-    Various \href{https://pypi.org/user/dilawar}{python packages} e.g. a
-    utility to extract data from images of plots, Notion/Gitlab bridge,
-    a UI for oscilloscope, and a poor man's plagiarism detector --
-    \href{https://github.com/dilawar/sniffer}{CodeSniffer} -- 
-    when I was a TA.
-}
-\cvlistitem{ 
-    \href{https://pypi.org/project/smoldyn}{Python binding} and wheels for
+    I wrote and maintain a few \href{https://pypi.org/user/dilawar}{python
+    packages}: a utility to extract data from images of plots, Notion/Gitlab bridge,
+    a UI for oscilloscope, and a poor man's plagiarism detector 
+    \href{https://github.com/dilawar/sniffer}{CodeSniffer}. I also wrote python
+    bindings and maitain \href{https://pypi.org/project/smoldyn}{wheels} for
     \href{https://smoldyn.org}{Smoldyn simulator} and
-    \href{https://pypi.org/project/pymoose/}{MOOSE simulator} using
-    pybind11.
+    \href{https://pypi.org/project/pymoose/}{MOOSE simulator}.
 }
 \cvlistitem{
-    Fabrication of micro-electrode arrays for retinal prosthesis. Thesis advisor:
-    \href{mailto:dinesh@ee.iitb.ac.in}{Dinesh K. Sharma}.
+    To regain lost eye-sight, I fabricated a micro-electrode arrays on ITO
+    coated glass to stimulate retinal cell.
 }
-
-%
-% Skills
-%
-\section{Skills}
-\cvline{Languages}{C/C++, Python, Rust, PHP, Javascript/Typescript, \LaTeX. 
-    \textbf{(familiar)} Haskell, VHDL/Verilog/Bluespec, SQL, Lua, \LaTeX. Very
-    familiar with scientific ecosystem of C++, Python. Love Rust!
-}
-\cvline{Softwares \& Libraries}{
-    \textbf{(databases)} PostGreSQL, MariaDB, Sqlite3, DuckDB, VictorialMetrics;
-    \textbf{(devops)} GitLab, Docker, CMake, PyInfra/ansible, Bash, custom tools, 
-    \textbf{(cicd)} Jenkins, Gitlab Runners;
-    \textbf{(observability/security)} Grafana, eBPF based sensors, OpenTelemetry, osquery; \href{https://build.opensuse.org/users/dilawar}{Open Build Service};
-    \textbf{(libraries)} Boost, PyBind11, Win32, GDAL, OpenCV, scipy stack;
-}
-\cvline{Web}{
-    \textbf{(frontend)} Vue3, React, HTMX;
-    \textbf{(backend)} Codeigniter, Laravel, Axum, Actix, FastAPI;
-    \textbf{(other)} Rust/Wasm, D3;
-}
-\cvline{Modeling, Design and Simulation}{
-    PlantUML, TikZ; KiCAD, OpenSCAD; ModelSim, NgSpice; MOOSE, Neuron, Smoldyn.
-}
-\cvline{Advanced DSA}{
-    Optimization using network Flows, Graphs and Linear Algebra, Computer Vision, 
-    Stochastic Datastructre, BDD and Model Checking. DSP and Audio Processing.
-}
-
 
 
 %
 % EDUCATION
 %
 \section{Education}
-\cventry{2014-2019}{\textbf{PhD}, Computational Neuroscience, NCBS Bangalore (TIFR Mumbai), India}{}{}{}{}
-\cventry{2010-2013}{\textbf{PhD}, Digial Systems, IIT Bombay}{}{}{\textbf{withdrawn}}{}
-\cventry{2007-2009}{\textbf{MTech}, VLSI, IIT Bombay}{}{}{}{}
+\cventry{2014 -- 2019}{\textbf{PhD}, Computational Neuroscience, NCBS Bangalore (TIFR Mumbai), India}{}{}{}{}
+\cventry{2010 -- 2013}{\textbf{PhD}, Digial Systems, IIT Bombay}{}{}{\textbf{withdrawn}}{}
+\cventry{2007 -- 2009}{\textbf{MTech}, VLSI, IIT Bombay}{}{}{}{}
 % \cventry{2003-2007}{\textbf{BTech}, Electrical Engineering, Dr. MGR ERI, Chennai}{}{}{}{}
 
 \end{document}
