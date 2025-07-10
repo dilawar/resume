@@ -1,9 +1,8 @@
 \documentclass[11pt, a4paper, colorlinks=true, linkcolor=blue]{moderncv}
-% \hypersetup{urlcolor=blue}
 \moderncvtheme{banking}
 \usepackage[sfdefault, light]{FiraSans}
 \usepackage[top=0.6cm, bottom=1.5cm, right=1cm, left=1cm]{geometry}
-\recomputelengths 
+\recomputelengths
 
 % personal data
 \name{Dilawar}{Singh}
@@ -20,23 +19,23 @@
 \hypersetup{urlcolor=blue}
 \maketitle
 
-\vspace{-8mm} 
+\vspace{-8mm}
 
-System Engineer and Fullstack developer. I have significant experience as a tech lead 
-and CTO. I can easily integrate into teams, build teams, and mentor juniors.
-Slightly workaholic. FOSS Contributor.
+Highly capable generalist system engineer and fullstack developer with significant
+tech lead and CTO experience. I can easily integrate into teams, build teams,
+and mentor juniors. Slightly workaholic. FOSS Contributor.
 
 %
 % Skills
 %
 \section{Skills}
 \cvline{Languages}{
-    Rust, C++, Python, PHP, Javascript/Typescript, SQL, \LaTeX. 
+    Rust, C++, Python, PHP, Javascript/Typescript, SQL, \LaTeX.
     \emph{(familiar)} Haskell, VHDL/Verilog/SystemC.
 }
 \cvline{Databases}{
-    PostGreSQL, MariaDB, Sqlite3, DuckDB, VictorialMetrics. \emph{(tools)}
-    Phinx, Alembic, SQLModel.
+    PostGreSQL, MariaDB, Sqlite3, DuckDB, VictorialMetrics. {\small 
+    Phinx, Alembic, SQLModel, SQLX/Diesel.}
 }
 \cvline{Libraries \& Frameworks} {
     Boost, PyBind11, Win32 API, GDAL, OpenCV, numpy/scipy stack, leptos.
@@ -49,8 +48,8 @@ Slightly workaholic. FOSS Contributor.
 }
 \cvline{DevOps}{
     Git, Docker, CMake, PyInfra/ansible, bash/lua; Jenkins, Gitlab Runners;
-    Grafana; eBPF based sensors; 
-    Packaging (nsis, deb, rpm), 
+    Grafana; eBPF based sensors;
+    Packaging (nsis, deb, rpm),
     \href{https://build.opensuse.org/users/dilawar}{Open Build Service};
 }
 \cvline{Misc}{
@@ -66,37 +65,40 @@ Slightly workaholic. FOSS Contributor.
 \section{Experience}
 \cventry{Jan 2025 -- current}{\textbf{Senior Engineer}, Dognosis, Bengaluru}{}{}{}{
     \cvlistitem{%
-        To improve cancer-detection rate, I am resposible for coming up with
-        practical computational and experimental strategies. 
+        \normalsize
+        Responsible for improving computational and experimental cancer-detection
+        strategies using dogs.
     }
     \cvlistitem{%
-        To collect patient data from remote locations, building APIs and
-        portals. Also helping hardware team to build an experimental area where
-        tainers involvement is mininal to increase the throughput. 
+        \normalsize
+        Building data APIs and portals to collect patient data at remote locations, 
+        and helping hardware team to build an experimental arena where
+        trainers involvement is minimized.
     }
     \cvlistitem{%
-        I am helping in building their technical team (technical interviews), and
-        infrastructure and devops.
+        \normalsize
+        I also help in building technical team (technical interviews), infrastructure and devops.
     }
 }
 
 \cventry{Dec 2019 -- Dec 2024}{\textbf{CoFounder \& CTO}, Subconscious Compute, Bengaluru}{}{}{}{
     \cvlistitem{%
-        Cofounded a endpoint cybersecurity startup  and took it to pre-series A.
-        I led the development of its flagship endpoint security product Shepherd.
-        I hired and managed a team of 15 system engineers for writing a cross platform
-        endpoint-security solution that includes an agent, data-collection APIs,
-        databases.
+        \normalsize
+        Cofounded a endpoint cybersecurity startup  and took it through pre-series A.
+        I hired and led a team of 15 system engineers to build its flagship endpoint 
+        security product Shepherd.
     }
     \cvlistitem{%
-        As IC, I wrote kernel minifilter (C++, Win32) and contributed to endpoint 
-        observability agent (Rust, C++, Java) for cross-platform (Linux, Windows, OSX, 
+        \normalsize
+        As IC, I wrote kernel minifilter (C++, Win32) and contributed to endpoint
+        observability agent (Rust, C++, Java) for cross-platform (Linux, Windows, OSX,
         Android) deployment.
     }
 }
 \cventry{2016 -- 2018}{\textbf{Research Fellow \& GSoC Mentor}}{}{}{}{
     \cvlistitem{
-        To improve the speed of numerical solvers in the simulator
+        \normalsize
+        To improve the speed of various numerical solvers in the simulator
         \href{https://moose.ncbs.res.in}{MOOSE}, I mentored GPU/CUDA effort in
         GSoC. Added SMBL support and modernize build system.
     }
@@ -104,6 +106,7 @@ Slightly workaholic. FOSS Contributor.
 
 \cventry{Jul 2009 -- Jun 2010}{\textbf{Firmware Engineer}, Kritical Solutions, Noida}{}{}{}{
     \cvlistitem{
+        \normalsize
         To remove vibration artifacts from recorded videos, I implemented Kalman filter
         based image stabilizer.
     }
@@ -114,15 +117,15 @@ Slightly workaholic. FOSS Contributor.
 %
 \section{Selected Projects}
 \cvlistitem{
-    To reduce email chaos and trips to the academic office, I wrote 
+    To reduce email chaos and trips to the academic office, I wrote
     \href{https://ncbs.res.in/hippo}{NCBS Hippo} to automatically
     \& "optimally" schedule annual seminars. It also managed room booking,
-    institute public calendar. I also wrote accompanying Android App 
+    institute public calendar. I also wrote accompanying Android App
     (\href{https://play.google.com/store/apps/details?id=com.dilawar.hippo}{Google
     Play}).
 }
 \cvlistitem{
-    Imagine training mice manually? I built 
+    Imagine training mice manually? I built
     a \href{https://github.com/BhallaLab/AnimalBehaviour}{Behaviour Box} that
     automated protocols. Suddenly, multiple sessions were possible in a day!
 }
@@ -132,10 +135,12 @@ Slightly workaholic. FOSS Contributor.
 }
 \cvlistitem{
     I wrote and maintain a few \href{https://pypi.org/user/dilawar}{python
-    packages}: a utility to extract data from images of plots, Notion/Gitlab bridge,
-    a UI for oscilloscope, and a poor man's plagiarism detector 
+    packages}: a utility to extract
+    \href{https://github.com/dilawar/PlotDigitizer}{data from images of plots}, 
+    Notion/Gitlab bridge,
+    a UI for oscilloscope, and a poor man's plagiarism detector
     \href{https://github.com/dilawar/sniffer}{CodeSniffer}. I also wrote python
-    bindings and maitain \href{https://pypi.org/project/smoldyn}{wheels} for
+    bindings and maintain \href{https://pypi.org/project/smoldyn}{wheels} for
     \href{https://smoldyn.org}{Smoldyn simulator} and
     \href{https://pypi.org/project/pymoose/}{MOOSE simulator}.
 }
