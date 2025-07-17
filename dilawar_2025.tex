@@ -1,8 +1,9 @@
 \documentclass[11pt, a4paper, colorlinks=true, linkcolor=blue]{moderncv}
 \moderncvtheme{banking}
-\usepackage[sfdefault, light]{FiraSans}
-\usepackage[top=0.6cm, bottom=1.5cm, right=1cm, left=1cm]{geometry}
-\recomputelengths
+% \usepackage[sfdefault, light]{FiraSans}
+\usepackage[default, oldstyle, scale=0.95]{opensans}
+\usepackage[top=1.1cm, bottom=1.5cm, right=1cm, left=1.24cm]{geometry}
+\linespread{1.08}
 
 % personal data
 \name{Dilawar}{Singh}
@@ -12,49 +13,44 @@
 \social[github]{dilawar}
 \renewcommand\labelitemi{\textbullet}
 
-%----------------------------------------------------------------------------------
-%            content
-%----------------------------------------------------------------------------------
 \begin{document}
 \hypersetup{urlcolor=blue}
 \maketitle
 
 \vspace{-8mm}
-
-Capable system engineer and fullstack developer with significant
-tech lead and CTO experience. I can easily integrate into teams, build teams,
-and mentor juniors. Slightly workaholic. FOSS Contributor.
+\normalsize
+Experienced system engineer and capable fullstack developer with significant tech lead
+experience looking for IC roles. I can manage small teams, build teams, and
+mentor juniors. Slightly workaholic, FOSS Contributor.
 
 %
 % Skills
 %
+\vspace{-4mm}
 \section{Skills}
 \cvline{Languages}{
     Rust, C++, Python, PHP, Javascript/Typescript, SQL, \LaTeX.
     \emph{(familiar)} Haskell, VHDL/Verilog/SystemC.
 }
+\cvline{Libraries \& Frameworks} {
+    Boost, PyBind11, Win32 API, OpenCV, numpy/scipy stack, Leptos;
+    Vue3, React, HTMX; Codeigniter, Laravel, Axum, Actix, FastAPI
+}
+\cvline{Simulation \& Modeling}{
+    PlantUML, TikZ; KiCAD, OpenSCAD; ModelSim, NgSpice; MOOSE, Neuron; Smoldyn.
+}
+\cvline{Tech \& Ops}{
+    Git, Docker, CMake, PyInfra/Ansible, Shell scripting/Lua; Jenkins/Gitlab Runners;
+    Grafana; eBPF; Packaging (nsis, deb, rpm),
+    \href{https://build.opensuse.org/users/dilawar}{Open Build Service};
+}
 \cvline{Databases}{
     PostGreSQL, MariaDB, Sqlite3, DuckDB, VictorialMetrics. {\small
     Phinx, Alembic, SQLModel, SQLX/Diesel.}
 }
-\cvline{Libraries \& Frameworks} {
-    Boost, PyBind11, Win32 API, GDAL, OpenCV, numpy/scipy stack, leptos.
-}
-\cvline{Web}{
-    Vue3, React, HTMX; Codeigniter, Laravel, Axum, Actix, FastAPI;
-}
-\cvline{Modeling and Simulation}{
-    PlantUML, TikZ; KiCAD, OpenSCAD; ModelSim, NgSpice; MOOSE, Neuron; Smoldyn.
-}
-\cvline{DevOps}{
-    Git, Docker, CMake, PyInfra/ansible, bash/lua; Jenkins, Gitlab Runners;
-    Grafana; eBPF based sensors;
-    Packaging (nsis, deb, rpm),
-    \href{https://build.opensuse.org/users/dilawar}{Open Build Service};
-}
 \cvline{Misc}{
-    Parser, Network Flows, Graphs, Linear Algebra \& Combinatorics,
-    Computer Vision, Probabilistic DSA, BDD/Model Checking, DSP, Routing.
+    Parsing, Network Flows, Graphs, Linear Algebra, Combinatorics,
+    Computer Vision, Probabilistic DSA, BDD \& Model Checking, DSP, Routing.
 }
 
 
@@ -71,8 +67,7 @@ and mentor juniors. Slightly workaholic. FOSS Contributor.
     }
     \cvlistitem{%
         \normalsize
-        Led a small capable team to build data APIs and portals from scratch to collect
-        medical data at remote locations
+        Build data APIs and portals from scratch to collect medical data at remote locations
     }
     \cvlistitem{%
         \normalsize
@@ -151,10 +146,6 @@ and mentor juniors. Slightly workaholic. FOSS Contributor.
     \href{https://smoldyn.org}{Smoldyn simulator} and
     \href{https://pypi.org/project/pymoose/}{MOOSE simulator}
 }
-\cvlistitem{
-    To regain lost eye-sight, I fabricated a micro-electrode arrays on ITO
-    coated glass to stimulate retinal cell.
-}
 
 
 %
@@ -164,6 +155,6 @@ and mentor juniors. Slightly workaholic. FOSS Contributor.
 \cventry{2019}{\textbf{PhD}, Computational Neuroscience, NCBS Bangalore (TIFR Mumbai), India}{}{}{}{}
 \cventry{2013}{\textbf{PhD}, Digial Systems, IIT Bombay}{}{}{\textbf{withdrawn}}{}
 \cventry{2009}{\textbf{MTech}, Electrical Engineering (VLSI), IIT Bombay}{}{}{}{}
-\cventry{2007}{\textbf{BTech}, Electrical Engineering, Dr. MGR ERI, Chennai}{}{}{}{}
+% \cventry{2007}{\textbf{BTech}, Electrical Engineering, Dr. MGR ERI, Chennai}{}{}{}{}
 
 \end{document}
