@@ -17,27 +17,29 @@
 \hypersetup{urlcolor=blue}
 \maketitle
 
-\vspace{-8mm}
+\vspace{-6mm}
 \normalsize
-Experienced system engineer and capable fullstack developer with significant tech lead
-experience looking for IC roles. I can manage small teams, build teams, and
-mentor juniors. Slightly workaholic, FOSS Contributor.
+
+Experienced system engineer (multiple domains) and fullstack developer with
+significant tech lead experience looking for IC roles. I can manage small teams,
+build teams, and mentor juniors. FOSS contributor and \href{https://joss.theoj.org/}{reviewer}.
 
 %
 % Skills
 %
-\vspace{-4mm}
+\vspace{-3mm}
 \section{Skills}
-\cvline{Languages}{
-    Rust, C++, Python, PHP, Javascript/Typescript, SQL, \LaTeX.
-    \emph{(familiar)} Haskell, VHDL/Verilog/SystemC.
+\cvline{Languages}{%
+    Rust, C++, Python, PHP, Typescript/JS, SQL, \LaTeX.
+    \emph{(familiar)} Haskell, SystemC, Verilog, VHDL.
 }
-\cvline{Libraries \& Frameworks} {
-    Boost, PyBind11, Win32 API, OpenCV, numpy/scipy stack, Leptos;
-    Vue3, React, HTMX; Codeigniter, Laravel, Axum, Actix, FastAPI
+\cvline{Libraries \& Frameworks}{%
+    Boost, Win32 API, PyBind11, OpenCV; Python data stack; Leptos;
+    Vue3, React, HTMX; Codeigniter, Laravel; Axum, Actix, FastAPI;
+    \href{https://github.com/dilawar/HippoApp}{Cordova}, \href{https://github.com/dilawar/sms-forwarder}{Quasar}.
 }
 \cvline{Simulation \& Modeling}{
-    PlantUML, TikZ; KiCAD, OpenSCAD; ModelSim, NgSpice; MOOSE, Neuron; Smoldyn.
+    KiCAD, OpenSCAD; ModelSim, NgSpice; MOOSE, Neuron, Smoldyn; PlantUML, TikZ;
 }
 \cvline{Tech \& Ops}{
     Git, Docker, CMake, PyInfra/Ansible, Shell scripting/Lua; Jenkins/Gitlab Runners;
@@ -49,8 +51,9 @@ mentor juniors. Slightly workaholic, FOSS Contributor.
     Phinx, Alembic, SQLModel, SQLX/Diesel.}
 }
 \cvline{Misc}{
-    Parsing, Network Flows, Graphs, Linear Algebra, Combinatorics,
-    Computer Vision, Probabilistic DSA, BDD \& Model Checking, DSP, Routing.
+    Literature survery and analysis, Parsing, Network Flows, Graphs, Linear Algebra, Combinatorics,
+    Computer Vision, Probabilistic DSA, BDD \& Model Checking, DSP, Routing;
+    Android, RTOS, Linux
 }
 
 
@@ -59,7 +62,7 @@ mentor juniors. Slightly workaholic, FOSS Contributor.
 %
 \vspace{-3mm}
 \section{Experience}
-\cventry{Jan 2025 -- current}{\textbf{Senior Engineer}, Dognosis, Bengaluru}{}{}{}{
+\cventry{Jan 2025 -- current}{\textbf{Senior Engineer}, Dognosis, Bengaluru}{}{}{}{%
     \cvlistitem{%
         \normalsize
         Added SLAM to existing canine kit that generates 3D model of arena to
@@ -75,7 +78,7 @@ mentor juniors. Slightly workaholic, FOSS Contributor.
         sizes to 11 in 3 months
     }
 }
-\cventry{Dec 2019 -- Dec 2024}{\textbf{CoFounder \& CTO}, Subconscious Compute, Bengaluru}{}{}{}{
+\cventry{Dec 2019 -- Dec 2024}{\textbf{Cofounder \& CTO}, Subconscious Compute, Bengaluru}{}{}{}{%
     \cvlistitem{%
         \normalsize
         Cofounded a endpoint cybersecurity startup after my PhD and took it through pre-series A
@@ -87,27 +90,27 @@ mentor juniors. Slightly workaholic, FOSS Contributor.
     }
     \cvlistitem{%
         \normalsize
-        Wrote kernel minifilter, core algorithms for cross-platform deployment
-        (Win32, OSX, *nix/Android)
+        Wrote kernel minifilter, designed core algorithms, and setup devops for cross-platform deployment
     }
 }
-\cventry{2016 -- 2018}{\textbf{Research Fellow \& GSoC Mentor}}{}{}{}{
-    \cvlistitem{
+\cventry{2016 -- 2018}{\textbf{Research Fellow \& GSoC Mentor}}{}{}{}{%
+    \cvlistitem{%
         \normalsize
         Added various numerical solvers in \href{https://moose.ncbs.res.in}{MOOSE} simulator
-        that allowed switching solvers
+        that allowed broader use in multiscale problems
     }
     \cvlistitem{
         \normalsize
-        Mentored GSoC participants for 3 years on GPU/CUDA effort
+        Mentored GSoC participants of INCF for 3 years on GPU/CUDA effort
+        resulting in faster simulations
     }
 }
 
-\cventry{Jul 2009 -- Jun 2010}{\textbf{Firmware Engineer}, Kritical Solutions, Noida}{}{}{}{
-    \cvlistitem{
+\cventry{Jul 2009 -- Jun 2010}{\textbf{Firmware Engineer}, Kritikal Solutions, Noida}{}{}{}{%
+    \cvlistitem{%
         \normalsize
-        Implemented Kalman filter based image stabilizer to remove vibration artifacts from recorded
-        videos
+        Implemented Kalman filter based image stabilizer that removed most vibration artifacts
+        from recorded videos
     }
 }
 
@@ -115,25 +118,24 @@ mentor juniors. Slightly workaholic, FOSS Contributor.
 % Projects
 %
 \section{Projects}
-\cvlistitem{
-    Wrote \href{https://ncbs.res.in/hippo}{NCBS Hippo} used by almost everyone
-    on campus to automatically \& "optimally" schedule annual thesis seminars.
-    Hippo also managed room booking, institute public calendar. I also wrote
+\cvlistitem{%
+    Wrote \href{https://ncbs.res.in/hippo}{NCBS Hippo} being used by >1000 people
+    on campus. It automatically \& "optimally" schedule annual thesis seminars,
+    manages meeting rooms and institute public calendar. Wrote
     accompanying Android App
     (\href{https://play.google.com/store/apps/details?id=com.dilawar.hippo}{Google
     Play}). Hippo saved thousands of trips and emails to academic office.
 }
-\cvlistitem{
-    Imagine training a mouse without any automation? I built
-    a \href{https://github.com/BhallaLab/AnimalBehaviour}{Behaviour Box} that
-    automated training session making multiple sessions possible in a day!
+\cvlistitem{%
+    Built a \href{https://github.com/BhallaLab/AnimalBehaviour}{Behaviour Box}
+    that automated training session making multiple sessions possible in a day!
 }
-\cvlistitem{
-    I wrote and maintain a few \href{https://crates.io/users/dilawar}{rust
-    crates}: stream processing, WMI interface, cli tools etc
+\cvlistitem{%
+    Wrote and maintain a few \href{https://crates.io/users/dilawar}{rust
+    crates}: stream processing, WMI interface, a few cli utilities
 }
-\cvlistitem{
-    I wrote and maintain a few \href{https://pypi.org/user/dilawar}{python
+\cvlistitem{%
+    Wrote and maintain a few \href{https://pypi.org/user/dilawar}{python
     packages}: a popular utility to extract
     \href{https://github.com/dilawar/PlotDigitizer}{data from images of plots},
     Notion/Gitlab bridge for internal use,
@@ -141,10 +143,10 @@ mentor juniors. Slightly workaholic, FOSS Contributor.
     \href{https://github.com/dilawar/sniffer}{CodeSniffer} as teaching
     assistant
 }
-\cvlistitem{
+\cvlistitem{%
     Wrote python bindings and maintain \href{https://pypi.org/project/smoldyn}{wheels} for
-    \href{https://smoldyn.org}{Smoldyn simulator} and
-    \href{https://pypi.org/project/pymoose/}{MOOSE simulator}
+    two major C++ academic simuators \href{https://smoldyn.org}{Smoldyn} and
+    \href{https://pypi.org/project/pymoose/}{MOOSE}
 }
 
 
@@ -154,7 +156,7 @@ mentor juniors. Slightly workaholic, FOSS Contributor.
 \section{Education}
 \cventry{2019}{\textbf{PhD}, Computational Neuroscience, NCBS Bangalore (TIFR Mumbai), India}{}{}{}{}
 \cventry{2013}{\textbf{PhD}, Digial Systems, IIT Bombay}{}{}{\textbf{withdrawn}}{}
-\cventry{2009}{\textbf{MTech}, Electrical Engineering (VLSI), IIT Bombay}{}{}{}{}
+\cventry{2009}{\textbf{Master of Technology}, Electrical Engineering (VLSI), IIT Bombay}{}{}{}{}
 % \cventry{2007}{\textbf{BTech}, Electrical Engineering, Dr. MGR ERI, Chennai}{}{}{}{}
 
 \end{document}
