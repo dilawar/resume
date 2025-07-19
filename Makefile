@@ -1,6 +1,4 @@
-all : dilawar_2025.pdf
+all : dilawar_singh.pdf dilawar_2020.pdf
 
-dilawar_2025.pdf : dilawar_2025.tex
-	# latexmk -pdf -lualatex  $<
+%.pdf : %.tex
 	tectonic $<
-	cp $@ dilawar-singh-resume.pdf
