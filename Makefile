@@ -1,4 +1,4 @@
-all : dilawar_singh.pdf dilawar_2020.pdf
+all : dilawar_singh.pdf  dilawar_singh_system.pdf
 
 %.pdf : %.tex
 	tectonic $<
