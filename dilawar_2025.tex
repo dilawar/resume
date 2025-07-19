@@ -1,24 +1,37 @@
+<<<<<<< Updated upstream
 \documentclass[11pt, a4paper, colorlinks=true, linkcolor=blue]{moderncv}
 \moderncvtheme{banking}
 % \usepackage[sfdefault, light]{FiraSans}
 \usepackage[default, oldstyle, scale=0.95]{opensans}
 \usepackage[top=1.1cm, bottom=1.5cm, right=1cm, left=1.24cm]{geometry}
 \linespread{1.08}
+=======
+% \documentclass[11pt, a4paper, colorlinks=true, linkcolor=blue]{moderncv}
+% \moderncvtheme{banking}
+\documentclass{pats-resume}
+% \usepackage[sfdefault, light]{FiraSans}
+% \usepackage[top=0.6cm, bottom=1.5cm, right=1cm, left=1cm]{geometry}
+% \recomputelengths
+>>>>>>> Stashed changes
 
 % personal data
-\name{Dilawar}{Singh}
-% \phone{+91 910 875 0527}
-\email{dilawar.s.rajput@gmail.com}
+\setname{Dilawar Singh}
+% \setphone{+91 910 875 0527}
+\setemail{dilawar.s.rajput@gmail.com}
 \homepage{dilawars.me}
-\social[github]{dilawar}
+\setgithub{github.com/dilawar}
+\setlinkedin{linkedin.com/dilawars}
 \renewcommand\labelitemi{\textbullet}
 
 \begin{document}
+<<<<<<< Updated upstream
 \hypersetup{urlcolor=blue}
 \maketitle
 
 \vspace{-6mm}
 \normalsize
+=======
+>>>>>>> Stashed changes
 
 Experienced system engineer (multiple domains) and fullstack developer with
 significant tech lead experience looking for IC roles. I can manage small teams,
@@ -27,6 +40,7 @@ build teams, and mentor juniors. FOSS contributor and \href{https://joss.theoj.o
 %
 % Skills
 %
+<<<<<<< Updated upstream
 \vspace{-3mm}
 \section{Skills}
 \cvline{Languages}{%
@@ -54,12 +68,42 @@ build teams, and mentor juniors. FOSS contributor and \href{https://joss.theoj.o
     Literature survery and analysis, Parsing, Network Flows, Graphs, Linear Algebra, Combinatorics,
     Computer Vision, Probabilistic DSA, BDD \& Model Checking, DSP, Routing;
     Android, RTOS, Linux
+=======
+\ResumeSection{Skills}
+\skill{Languages}{
+    Rust, C++, Python, PHP, Javascript/Typescript, SQL, \LaTeX.
+    \emph{(familiar)} Haskell, VHDL/Verilog/SystemC.
+}
+\skill{Databases}{
+    PostGreSQL, MariaDB, Sqlite3, DuckDB, VictorialMetrics. {\small
+    Phinx, Alembic, SQLModel, SQLX/Diesel.}
+}
+\skill{Libraries \& Frameworks} {
+    Boost, PyBind11, Win32 API, GDAL, OpenCV, numpy/scipy stack, leptos.
+}
+\skill{Web}{
+    Vue3, React, HTMX; Codeigniter, Laravel, Axum, Actix, FastAPI;
+}
+\skill{Modeling and Simulation}{
+    PlantUML, TikZ; KiCAD, OpenSCAD; ModelSim, NgSpice; MOOSE, Neuron; Smoldyn.
+}
+\skill{DevOps}{
+    Git, Docker, CMake, PyInfra/ansible, bash/lua; Jenkins, Gitlab Runners;
+    Grafana; eBPF based sensors;
+    Packaging (nsis, deb, rpm),
+    \href{https://build.opensuse.org/users/dilawar}{Open Build Service};
+}
+\skill{Misc}{
+    Parser, Network Flows, Graphs, Linear Algebra \& Combinatorics,
+    Computer Vision, Probabilistic DSA, BDD/Model Checking, DSP, Routing.
+>>>>>>> Stashed changes
 }
 
 
 %
 % Work experience.
 %
+<<<<<<< Updated upstream
 \vspace{-3mm}
 \section{Experience}
 \cventry{Jan 2025 -- current}{\textbf{Senior Engineer}, Dognosis, Bengaluru}{}{}{}{%
@@ -111,6 +155,44 @@ build teams, and mentor juniors. FOSS contributor and \href{https://joss.theoj.o
         \normalsize
         Implemented Kalman filter based image stabilizer that removed most vibration artifacts
         from recorded videos
+=======
+\ResumeSection{Experience}
+
+\entry{Dognosis}{Senior Engineer}{Bengaluru}{Jan 2025 -- current}
+\tech{%
+    \details{%
+        \item Responsible for improving computational and experimental cancer-detection strategies using dogs.
+        \item Building data APIs and portals to collect patient data at remote locations, and helping hardware team to build an experimental arena where trainers involvement is minimized.
+        \item I also help in building technical team (technical interviews), infrastructure and devops.
+        }
+    }
+
+\entry{Subconscious Compute}{Cofounded and CTO}{Bengaluru}{Dec 2019 -- Dec 2024}
+\tech{%
+    \details{%
+    \item Cofounded a endpoint cybersecurity startup  and took it through pre-series A.
+        I hired and led a team of 15 system engineers to build its flagship endpoint
+        security product Shepherd.
+
+    \item As IC, I wrote kernel minifilter (C++, Win32) and contributed to endpoint
+        observability agent (Rust, C++, Java) for cross-platform (Linux, Windows, OSX,
+        Android) deployment.
+    }
+}
+
+\entry{NCBS Bangalore \& INCF}{Research Fellow \& GSoC Mentor}{2016 -- 2018}
+\tech{%
+    \details{%
+    \item To improve the speed of various numerical solvers in the simulator \href{https://moose.ncbs.res.in}{MOOSE}, I mentored GPU/CUDA effort in GSoC. Added SMBL support and modernize build system.
+
+    }
+}
+
+\entry{Kritikal Solultions}{Firmware Engineer}{Noida}{Jul 2009 -- Jun 2010}
+\tech{%
+    \details{%
+    \item To remove vibration artifacts from recorded videos, I implemented Kalman filter based image stabilizer.
+>>>>>>> Stashed changes
     }
 }
 
@@ -118,11 +200,21 @@ build teams, and mentor juniors. FOSS contributor and \href{https://joss.theoj.o
 % Projects
 %
 \section{Projects}
+<<<<<<< Updated upstream
 \cvlistitem{%
     Wrote \href{https://ncbs.res.in/hippo}{NCBS Hippo} being used by >1000 people
     on campus. It automatically \& "optimally" schedule annual thesis seminars,
     manages meeting rooms and institute public calendar. Wrote
     accompanying Android App. Hippo saved thousands of) trips and emails to academic office.
+=======
+\cvlistitem{
+    To reduce email chaos and trips to the academic office, I wrote
+    \href{https://ncbs.res.in/hippo}{NCBS Hippo} to automatically
+    \& "optimally" schedule annual seminars. It also managed room booking,
+    institute public calendar. I also wrote accompanying Android App
+    (\href{https://play.google.com/store/apps/details?id=com.dilawar.hippo}{Google
+    Play}).
+>>>>>>> Stashed changes
 }
 \cvlistitem{%
     Built a \href{https://github.com/BhallaLab/AnimalBehaviour}{Behaviour Box}
@@ -132,6 +224,7 @@ build teams, and mentor juniors. FOSS contributor and \href{https://joss.theoj.o
     Wrote and maintain a few \href{https://crates.io/users/dilawar}{rust
     crates}: stream processing, WMI interface, a few cli utilities
 }
+<<<<<<< Updated upstream
 \cvlistitem{%
     Wrote and maintain a few \href{https://pypi.org/user/dilawar}{python
     packages}: a popular utility to extract
@@ -140,6 +233,18 @@ build teams, and mentor juniors. FOSS contributor and \href{https://joss.theoj.o
     a UI for oscilloscope and a simple plagiarism detector
     \href{https://github.com/dilawar/sniffer}{CodeSniffer} as teaching
     assistant
+=======
+\cvlistitem{
+    I wrote and maintain a few \href{https://pypi.org/user/dilawar}{python
+    packages}: a utility to extract
+    \href{https://github.com/dilawar/PlotDigitizer}{data from images of plots},
+    Notion/Gitlab bridge,
+    a UI for oscilloscope, and a poor man's plagiarism detector
+    \href{https://github.com/dilawar/sniffer}{CodeSniffer}. I also wrote python
+    bindings and maintain \href{https://pypi.org/project/smoldyn}{wheels} for
+    \href{https://smoldyn.org}{Smoldyn simulator} and
+    \href{https://pypi.org/project/pymoose/}{MOOSE simulator}.
+>>>>>>> Stashed changes
 }
 \cvlistitem{%
     Wrote python bindings and maintain \href{https://pypi.org/project/smoldyn}{wheels} for
