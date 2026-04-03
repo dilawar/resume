@@ -1,0 +1,2 @@
+resume file="./dilawar_resume.md": 
+    pandoc {{file}} -o {{file}}.pdf --pdf-engine=tectonic -V geometry:margin=1in -V fontsize=11pt -V colorlinks=true -V urlcolor=NavyBlue -V linkcolor=NavyBlue -V fontfamily=charter -V pagestyle=empty
