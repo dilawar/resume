@@ -30,6 +30,7 @@ cross-platform systems. Enthusiastic contributor to Free and Open Source Softwar
 
 ### Senior Engineer — Dognosis, Bengaluru `Jan 2025 – Feb 2026`
 
+- Co-developed high-performance async REST APIs in Rust (Poem, Tokio) powering the sensor data ingestion and query layer
 - Aggregated ~30 GB/session and ~10,000 events/session of live sensor data into a single operational control plane used for real-time decision-making and incident response
 - Set up and operated self-hosted infrastructure (GitLab, PostgreSQL, Grafana, CI/CD runners), including access control, backups, and deployment policies
 - Established risk-focused planning and sprint rituals that reduced invisible work, clarified ownership, and gave leadership visibility into team throughput
@@ -37,14 +38,15 @@ cross-platform systems. Enthusiastic contributor to Free and Open Source Softwar
 
 ### Cofounder & CTO — Subconscious Compute, Bengaluru `Dec 2019 – Dec 2024`
 
-- Wrote [Windows kernel minifilter](https://github.com/dilawar/poc-windows-rust-filter) (WDK, C++/Rust) and [Linux eBPF sensors](https://github.com/dilawar/tetragon-rust) generating real-time telemetry for Shepherd's cross-platform threat detection and compliance engine, deployed across customer endpoints
+- Wrote Windows kernel minifilter (WDK, C++/Rust) and Linux eBPF sensors generating real-time telemetry for Shepherd's cross-platform threat detection and compliance engine, deployed across customer endpoints
+- Authored the Windows port of Shepherd in Rust, including unsafe Win32 API bindings and FFI interop with existing C++ components
 - Hired and led a team of 15 systems engineers to build Shepherd, an automated endpoint compliance and security platform
 - Authored technical memos and pitch decks to secure accelerator placements and support fundraising
 
 ### Research Fellow & Google Summer of Code (GSoC) Mentor `2016 – 2018`
 
-- Added high-performance numerical solvers (C++, Boost, GNU Scientific Library) to the [MOOSE simulator](https://github.com/dilawar/moose), enabling it to solve multi-scale neural simulation problems
-- Wrote Python bindings (pybind11) and created packages for [MOOSE](https://pypi.org/project/pymoose-community) and [Smoldyn](https://pypi.org/project/smoldyn), significantly improving usability and adoption by the scientific community
+- Added high-performance numerical solvers (C++, Boost, GNU Scientific Library) to the [MOOSE simulator](https://github.com/BhallaLab/moose), including a [standalone LSODA solver](https://github.com/dilawar/libsoda-cxx), enabling it to solve multi-scale neural simulation problems
+- Wrote Python bindings (pybind11) and created packages for [MOOSE](https://github.com/BhallaLab/moose) and [Smoldyn](https://pypi.org/project/smoldyn), significantly improving usability and adoption by the scientific community
 - Mentored multiple Google Summer of Code (GSoC) contributors on GPU/CUDA-based acceleration over 4 years
 
 ### Firmware Engineer — Kritikal Solutions, Noida `Jul 2009 – Jun 2010`
@@ -53,13 +55,13 @@ cross-platform systems. Enthusiastic contributor to Free and Open Source Softwar
 
 ## Projects
 
-- Published Rust crates: [simple\_accumulator](https://crates.io/crates/simple_accumulator) (online statistics), [query-wmi](https://crates.io/crates/query-wmi) (Windows WMI interface), [job-dispatcher](https://crates.io/crates/job-dispatcher) (async job execution), [fsfilter-rs](https://github.com/dilawar/fsfilter-rs) (Windows filesystem monitoring)
+- Published Rust crates: [simple\_accumulator](https://crates.io/crates/simple_accumulator) (online statistics), [query-wmi](https://crates.io/crates/query-wmi) (Windows WMI interface), [job-dispatcher](https://crates.io/crates/job-dispatcher) (async job execution)
 - Published Python packages: [PlotDigitizer](https://pypi.org/project/plotdigitizer) (extract raw data from plot images), [SerialScope](https://github.com/dilawar/SerialScope) (serial-port oscilloscope), [eye-blink-detector](https://github.com/dilawar/eye-blink-detector) (OpenCV-based computer vision)
 
 ## Education
 
 - **PhD, Computational Neuroscience** — NCBS Bangalore (TIFR Mumbai), 2019
-- **Doctoral Studies, Digital Systems** — IIT Bombay, 2011–2013
+- **PhD, Digital Systems** (withdrawn) — IIT Bombay, 2011–2013
 - **M.Tech, Electrical Engineering (VLSI)** — IIT Bombay, 2009
 - **B.Tech, Instrumentation & Control Engineering** — Dr. MGR ERI Chennai, 2007
 
@@ -67,5 +69,6 @@ cross-platform systems. Enthusiastic contributor to Free and Open Source Softwar
 
 [Full list on Google Scholar](https://scholar.google.com/scholar?q=Dilawar+Singh)
 
+- [Subunit exchange enhances information retention by CaMKII in dendritic spines](https://doi.org/10.7554/eLife.41412), _eLife_, 2018
 - [Python interfaces for the Smoldyn simulator](https://doi.org/10.1093/bioinformatics/btab786), _Bioinformatics_, 2022
 - [BioSimulators: a central registry of simulation engines](https://doi.org/10.1093/nar/gkac331), _Nucleic Acids Research (NAR)_, 2022
