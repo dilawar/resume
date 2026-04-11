@@ -7,6 +7,5 @@ resume file="./dilawar_resume.md":
         -V colorlinks=true \
         -V urlcolor=NavyBlue \
         -V linkcolor=NavyBlue \
-        -V fontfamily=libertine \
         -V pagestyle=empty \
-        -V linestretch=1.25
+        -V linestretch=1.2
