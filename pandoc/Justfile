@@ -1,2 +1,12 @@
-resume file="./dilawar_resume.md": 
-    pandoc {{file}} -o {{file}}.pdf --pdf-engine=tectonic -V geometry:margin=1in -V fontsize=11pt -V colorlinks=true -V urlcolor=NavyBlue -V linkcolor=NavyBlue -V fontfamily=charter -V pagestyle=empty
+resume file="./dilawar_resume.md":
+    pandoc {{file}} -o {{file}}.pdf \
+        --pdf-engine=tectonic \
+        -H ./header.tex \
+        -V geometry:"top=0.75in,bottom=0.75in,left=0.85in,right=0.85in" \
+        -V fontsize=11pt \
+        -V colorlinks=true \
+        -V urlcolor=NavyBlue \
+        -V linkcolor=NavyBlue \
+        -V fontfamily=libertine \
+        -V pagestyle=empty \
+        -V linestretch=1.25

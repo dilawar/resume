@@ -1,0 +1,35 @@
+\usepackage{microtype}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{parskip}
+\usepackage{xcolor}
+\usepackage{mdframed}
+\usepackage{soul}
+
+% Define accent color
+\definecolor{accent}{HTML}{1a3c6e}
+
+% Section: larger bold with a thicker rule underneath
+\titleformat{\section}
+  {\Large\bfseries\color{accent}}
+  {}{0em}{}
+  [\vspace{3pt}\color{accent}\rule{\linewidth}{1.0pt}\vspace{-4pt}]
+\titlespacing*{\section}{0pt}{16pt}{8pt}
+
+% Subsection: normal bold, no extra decoration
+\titleformat{\subsection}
+  {\normalsize\bfseries}
+  {}{0em}{}
+\titlespacing*{\subsection}{0pt}{8pt}{2pt}
+
+% Tighter bullet lists
+\setlist[itemize]{noitemsep, topsep=3pt, parsep=0pt, leftmargin=1.2em}
+
+% Paragraph spacing
+\setlength{\parskip}{4pt}
+\setlength{\parindent}{0pt}
+
+% Style inline code (used for dates) as small gray text, no monospace box
+\definecolor{dategray}{HTML}{555555}
+\let\OldTexttt\texttt
+\renewcommand{\texttt}[1]{\small\color{dategray}#1\normalcolor\normalsize}
