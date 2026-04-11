@@ -23,8 +23,8 @@ FOSS contributor with work published in eLife, Bioinformatics, and on crates.io.
 
 ### Independent Consultant — Self-Employed, Bengaluru \hfill `Mar 2026 – Present`
 
+- Continuing as a consultant to Dognosis (following full-time engagement Jan 2025 – Feb 2026), designing and overseeing high-performance APIs (Rust, AMQP) for near-real-time experiments on highly correlated, diverse datasets (audio, video, sensor events)
 - Designing and developing scalable microservices supporting a virtual assistant platform for an automotive control system (Rust, C, Qualcomm SoC)
-- Designing and overseeing development of high-performance APIs (Rust, AMQP) for a cyber lab running near-real-time experiments on highly correlated, diverse datasets (audio, video, sensor events)
 
 ### Senior Engineer — Dognosis, Bengaluru \hfill `Jan 2025 – Feb 2026`
 
