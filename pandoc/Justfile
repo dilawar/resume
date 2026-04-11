@@ -1,5 +1,5 @@
 resume file="./dilawar_resume.md":
-    pandoc {{file}} -o {{file}}.pdf \
+    pandoc {{file}} -o `basename {{file}} .md`.pdf \
         --pdf-engine=tectonic \
         -H ./header.tex \
         -V geometry:"top=0.75in,bottom=0.75in,left=0.85in,right=0.85in" \
